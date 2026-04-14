@@ -41,3 +41,15 @@ Each step cuts problem in half!
 Speed Order:
 Fast → Slow
 O(1) > O(log n) > O(n) > O(n²)
+
+
+
+# Big-O Notes
+
+O(1) - Constant
+O(n) - Linear
+O(n^2) - Quadratic
+
+Example:
+Loop = O(n)
+Nested loop = O(n^2)
