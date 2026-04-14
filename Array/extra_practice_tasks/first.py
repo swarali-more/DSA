@@ -43,3 +43,5 @@ if s[0] in "aeiou":
     print("Starts with a vowel")
 else:
     print("Starts with a consonant")
+
+
