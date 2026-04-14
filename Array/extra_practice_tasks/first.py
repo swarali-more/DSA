@@ -43,3 +43,9 @@ if s[0] in "aeiou":
     print("Starts with a vowel")
 else:
     print("Starts with a consonant")
+
+
+# find sum of array
+
+arr = [1, 2, 3, 4]
+print(sum(arr))
