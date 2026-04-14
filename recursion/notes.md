@@ -3,6 +3,16 @@ Part 1: Basic Concept
 What is Recursion?
 -->A function that calls itself until a condition is met
 
+## What is Recursion?
+
+Recursion is a programming technique where a function calls itself
+to solve smaller parts of the same problem.
+
+Key Points:
+1. Base Case – condition where recursion stops
+2. Recursive Case – function calls itself
+3. Stack memory is used for recursive calls
+
 def countdown(n):
     if n == 0:
         print("Done")
