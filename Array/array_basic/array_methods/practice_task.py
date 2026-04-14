@@ -22,3 +22,13 @@ print(arr4)
 arr5 = [5, 10, 15, 20]
 arr5.pop(2)
 print(arr5)
+
+
+
+arr = [1, 2, 3]
+
+arr.append(4)
+arr.insert(1, 10)
+arr.remove(2)
+
+print(arr)
