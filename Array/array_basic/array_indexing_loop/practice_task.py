@@ -20,3 +20,11 @@ arr = [5, 10, 15, 20]
 for i in range(len(arr)):
     print(i,arr[i])
 
+
+# array indexing and loop example
+
+arr = [10, 20, 30, 40]
+
+for i in range(len(arr)):
+    print(f"Index {i} -> {arr[i]}")
+

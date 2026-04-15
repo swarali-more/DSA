@@ -31,6 +31,10 @@ print(id(a) == id(b))   #True - same object
 # -----------------------------------------------
 # 5. is vs ==
 # -----------------------------------------------
+
+# Always use: is None
+# Never use: == None
+
 a = [1,2,3]
 b = a
 c = [1,2,3]
@@ -41,3 +45,30 @@ print(a == b)
 print(a is b)
 print(b == c)
 print(b is c)
+
+# -------------------------------------------------------
+# 7. sys.getrefcount()
+# -------------------------------------------------------
+
+import sys
+
+a = [1, 2, 3]
+
+print(sys.getrefcount(a))   # 2 (a + function argument)
+
+b = a
+print(sys.getrefcount(a))   # 3 (a + b + function argument)
+
+del b
+print(sys.getrefcount(a))   # 2 (back)
+
+
+# -------------------------------------------------------
+# 8. None - singleton
+# -------------------------------------------------------
+
+x = None
+y = None
+
+print(x is y)   # True (same object)
+print(x == y)   # True (but 'is' preferred)
