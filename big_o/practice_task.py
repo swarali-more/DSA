@@ -15,3 +15,5 @@ for i in arr:
 # Searching in a sorted array 
 # by cutting it in half each step
 #ans-->#O(log n)
+
+
