@@ -16,7 +16,7 @@ for i in arr:
 
 ##Print each element with its index
 
-arr = [5, 10, 15, 20]
+arr = [10, 20, 30, 40]
 for i in range(len(arr)):
     print(i,arr[i])
 
