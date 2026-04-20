@@ -6,9 +6,9 @@
 # -----------------------------------------------
 # 1. Immutable - int (badlale tar nava object)
 # -----------------------------------------------
-a = 10
+a = 1
 b = a
-b = 20
+b = 2
 
 print(a)    #10 -unchanged (immutable)
 print(b)    #20 -chnaged
