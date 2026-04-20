@@ -44,7 +44,7 @@ print(id(a) == id(b))
 # -----------------------------------------------
 import copy
 
-a = [[1,2] , [3,4]]
+a = [[1,2] , [5,6]]
 b = copy.deepcopy(a)    #all new objects!
 
 b[0].append(99) 
