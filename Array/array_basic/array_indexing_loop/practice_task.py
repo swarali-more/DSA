@@ -5,7 +5,7 @@ print(fruits[-1])
 
 ##Q2 - Print only the 3rd element of this array
 
-arr = [10, 20, 30, 40, 50]
+arr = [1, 2, 3, 4, 5]
 print(arr[2])
 
 ##Q3 - Print all elements of this array using a loop
