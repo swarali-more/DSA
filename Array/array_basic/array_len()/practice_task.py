@@ -1,4 +1,4 @@
-arr = [10,20,30,40]
+arr = [1,2,3,4,5]
 
 # 1. Print length
 print(len(arr))

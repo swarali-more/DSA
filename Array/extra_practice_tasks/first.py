@@ -1,37 +1,51 @@
-import gc
-import tracemalloc
+#problem: 1
+#Given a string, check if it is a palindrome or not
+ 
+s = "racecar"
 
-# ── 1. Global list leak ────────────────────────────────────
-cache = []
+if s == s[::-1]:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
 
-def add_data(x):
-    cache.append(x)   # never cleared — LEAK!
 
-add_data("a")
-add_data("b")
-add_data("c")
-print(f"cache size: {len(cache)}")  # keeps growing
+#Using result variable:
+result = s == s[::-1]
+print(result)
 
-# ── 2. Cycle leak ──────────────────────────────────────────
-def create_cycle():
-    x = []
-    y = []
-    x.append(y)
-    y.append(x)
-    # function ends — but objects stuck in memory!
 
-create_cycle()
-print(f"before gc: {gc.get_count()}")
-gc.collect()
-print(f"after gc:  {gc.get_count()}")
+#Problem: 2
+# Count vowels in a string
+s = "hello world" 
+count = 0
 
-# ── 3. tracemalloc — memory usage track karo ──────────────
-tracemalloc.start()
+for ch in s:
+    if ch in "aeiou":
+        count+=1
+print(count)
 
-big_list = [i for i in range(10000)]
 
-snapshot = tracemalloc.take_snapshot()
-stats = snapshot.statistics("lineno")
-print(stats[0])   # konti line jast memory vaparte
 
-tracemalloc.stop()
+#Problem : 3
+#Given a string, print all characters in uppercase and check if length > 5
+s = "python world"
+print(s.upper())
+
+if len(s)> 5:
+    print("Length is greater than 5")
+else:
+    print("Length is not greater than 5")
+
+
+#Given a string, check if it starts with a vowel or consonant
+s= "apple"
+if s[0] in "aeiou":
+    print("Starts with a vowel")
+else:
+    print("Starts with a consonant")
+
+
+# find sum of array
+
+arr = [1, 2, 3, 4]
+print(sum(arr))
