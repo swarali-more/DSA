@@ -1,5 +1,5 @@
 ##Q1 - First 3 elements kadhh:
-arr1 = [10, 20, 30, 40, 50]
+arr1 = [5,10,15,20,25,30]
 print(arr1[0:3])
 
 ##Q2 - Last 2 elements kadhh:
