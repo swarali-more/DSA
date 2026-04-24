@@ -19,7 +19,7 @@ arr4.remove(30)
 print(arr4)
 
 ##Q5 - pop example
-arr5 = [10,15,20,15]
+arr5 = [10,20,30,40,50]
 arr5.pop(2)
 print(arr5)
 
