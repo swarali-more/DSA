@@ -14,12 +14,12 @@ arr3.insert(2,"Grapes")
 print(arr3)
 
 ##Q4 - 30 remove kar:
-arr4 = [10,20,30,40,50]
+arr4 = [10,15,20,25,30]
 arr4.remove(30)
 print(arr4)
 
 ##Q5 - pop example
-arr5 = [10,20,30,40,50]
+arr5 = [5,10,15,20,25]
 arr5.pop(2)
 print(arr5)
 
