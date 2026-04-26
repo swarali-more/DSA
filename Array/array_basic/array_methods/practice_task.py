@@ -24,7 +24,7 @@ arr5.pop(2)
 print(arr5)
 
 
-arr = [1, 2, 3]
+arr = [1, 2, 3, 4, 5]
 
 arr.append(4)
 arr.insert(1, 10)
